@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bulma.css"/>
+    <link rel="stylesheet" href="options.css"/>
+  </head>
+
+  <body>
+    <div id="popup-content">
+      <div class="m-4">
+        <div class="mb-2">
+          <span class="is-size-4">Interval Scroll</span>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="interval">Interval between scrolls (seconds)</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded">
+                <input class="input" type="text" id="interval-input"/>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="pixels">Pixels to Scroll</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded">
+                <input class="input" type="text" id="pixels-input"/>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="has-text-right">
+          <button id="interval-scroll-start" 
+                  class="button is-success">Start</button>
+          <button id="interval-scroll-stop" 
+                  class="button is-light">Stop</button>
+        </div>
+      </div>
+    </div>
+    <div id="error-content" class="hidden">
+      <p>There was an error.</p>
+    </div>
+    <script src="options.js"></script>
+  </body>
+
+</html>
