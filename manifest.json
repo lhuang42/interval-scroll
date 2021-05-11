@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Interval Scroll",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "description": "Scrolls the page at specified intervals.",
 

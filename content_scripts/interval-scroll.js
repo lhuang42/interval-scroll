@@ -8,6 +8,9 @@
   window.intervalScrollDelay = null;
 
   function scroll(interval, pixels) {
+    if (window.intervalScrollDelay) {
+      clearTimeout(window.intervalScrollDelay);
+    }
     window.scrollBy({
       left: 0, 
       top: pixels,
